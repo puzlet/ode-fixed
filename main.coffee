@@ -6,7 +6,9 @@ rk = {}
 # Order 1 (Forward Euler)
 rk[1] = (tn, tl, yl) ->
     h = tn - tl
-    yl + h*(feval tl, yl)
+    fv = feval tl, yl
+    (yl[i] + h*fs for fs, i in fv)  # Temp fix until operator overloading working.
+    #yl + h*(feval tl, yl)
 
 # Order 2 (Improved Euler)
 rk[2] = (tn, tl, yl) ->
