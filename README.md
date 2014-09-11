@@ -1,4 +1,1 @@
-ode-fixed
-=========
-
-Four orders of fixed-step Runge-Kutta ODE solvers.
+![](https://github.com/stemblab/ode-fixed/blob/gh-pages/thumb.png)
